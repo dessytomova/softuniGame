@@ -48,8 +48,8 @@
       <file leaf-file-name="ResourcesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/ResourcesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="55" column="29" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="61" />
+            <state relative-caret-position="377">
+              <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
               <folding>
                 <element signature="e#123#161#0#PHP" expanded="true" />
               </folding>
@@ -214,8 +214,8 @@
         <option value="$PROJECT_DIR$/Config/DbConfig.php" />
         <option value="$PROJECT_DIR$/Core/Application.php" />
         <option value="$PROJECT_DIR$/Controllers/BuildingsController.php" />
-        <option value="$PROJECT_DIR$/Controllers/ResourcesController.php" />
         <option value="$PROJECT_DIR$/cron/updateResources.php" />
+        <option value="$PROJECT_DIR$/Controllers/ResourcesController.php" />
       </list>
     </option>
   </component>
@@ -416,15 +416,15 @@
       <workItem from="1481282580557" duration="9389000" />
       <workItem from="1481373746875" duration="9330000" />
       <workItem from="1481537851020" duration="37774000" />
-      <workItem from="1481628100758" duration="92546000" />
+      <workItem from="1481628100758" duration="92635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183318000" />
+    <option name="totallyTimeSpent" value="183407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1936" height="1056" extended-state="0" />
+    <frame x="-2" y="0" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21675676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -926,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/ResourcesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="61" />
+        <state relative-caret-position="377">
+          <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
           <folding>
             <element signature="e#123#161#0#PHP" expanded="true" />
           </folding>

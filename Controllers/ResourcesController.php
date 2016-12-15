@@ -46,10 +46,6 @@ class ResourcesController
     public function add(){
 
         //var_dump($difference, $this->session->get('activeIsland'));
-
-       /* if($difference > 120){
-
-        }*/
     }
 
     private function calculateIncomePerHour($level){
