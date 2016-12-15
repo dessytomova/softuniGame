@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI}% !^/php_course/game/js/.*$
+RewriteCond %{REQUEST_URI}% !^/php_course/game/test/.*$
+RewriteCond %{REQUEST_URI}% !^/php_course/game/errors/.*$
+RewriteRule ^ index.php
+
+SetEnv ENVIRONMENT Development

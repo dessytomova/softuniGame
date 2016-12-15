@@ -1,0 +1,37 @@
+<?php
+/**
+ * @var \SoftUni\Core\ViewInterface $this
+ * @var \SoftUni\Models\View\PlayerProfileViewModel $model
+ */
+?>
+<?php if(mb_strlen($this->session->get('error'))>0){ ?>
+    <div class="alert alert-dismissible alert-danger"><?= $this->session->message('error');?></div>
+<?php } ?>
+<h1>Welcome, <?= $model->getUsername(); ?></h1>
+<div  class="col-lg-3 col-md-3 col-sm-4">
+    <div>
+        <div class="list-group table-of-contents">
+            <p class="list-group-item active">Islands</p>
+            <?php foreach($model->getIslands() as $island){?>
+              <a href="<?=$this->url("island", "changeIsland", [$island->getId()]);?>" class="list-group-item" <?php if($this->session->get('activeIsland')== $island->getId()){?>style = "color:yellow"<?php }?>><?= $island->getName()." (".$island->getX().",".$island->getY().")";?></a>
+            <?php }?>
+        </div>
+    </div>
+
+    <div>
+        <div class="list-group table-of-contents">
+            <p class="list-group-item active">Buildings</p>
+            <?php foreach($model->getBuildings() as $building){?>
+                <a href="<?=$this->url("buildings", "add", [$building->getBuildingId(),$building->getLevel()]);?>" class="list-group-item"><?=$building->getName()." Level: ".$building->getLevel();?></a>
+            <?php }?>
+        </div>
+    </div>
+
+    <div>
+        <div class="list-group table-of-contents">
+            <p class="list-group-item active">Ships</p>
+                <a href="#" class="list-group-item">Buy</a>
+        </div>
+    </div>
+</div>
+<!--<a href="<?=$this->url("players", "profileEdit", [$model->getId()]);?>">Edit your profile</a>--
