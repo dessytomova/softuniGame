@@ -54,10 +54,7 @@ class Application
         $actionName = $this->mvcContext->getAction(); // loginPost
 
         $args = $this->mvcContext->getArguments(); // []
-        
-        if(mb_strlen($controllerName)==0){
-            $this->responseService->redirect('players','login');
-        }
+
 
         if(!file_exists ($controllerFileName.".php")){
 

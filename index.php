@@ -22,6 +22,7 @@ $actionName = array_shift($args);
 
 $actionName = ($actionName===null)?'':$actionName;
 
+
 $dbInstanceName = 'default';
 
 Database::setInstance(DbConfig::DB_HOST, DbConfig::DB_USER, DbConfig::DB_PASS, DbConfig::DB_NAME, $dbInstanceName);
@@ -48,6 +49,10 @@ $app->registerDependency(\SoftUni\Services\IslandServiceInterface::class,\SoftUn
 $app->registerDependency(\SoftUni\Services\ResourceServiceInterface::class,\SoftUni\Services\ResourceService::class);
 $app->registerDependency(\SoftUni\Services\BuildingServicesInterface::class,\SoftUni\Services\BuildingService::class);
 $app->registerDependency(\SoftUni\Services\ShipServicesInterface::class,\SoftUni\Services\ShipServices::class);
+
+if(mb_strlen($controllerName)==0){
+    $responseService->redirect('players','login');
+}
 $app->start();
 
 
