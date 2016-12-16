@@ -3,11 +3,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css"/>
-    <script
-        src="http://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <script src = "../js/update.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <!-- <script src = "../js/update.js"></script>-->
 </head>
 
 <body>
@@ -22,7 +19,7 @@
             </button>
             <a class="navbar-brand" href="<?=$this->url("players", "profile");?>">Island Battle</a>
         </div>
-
+        <?= $this->session->get('islandId');?>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <?php
