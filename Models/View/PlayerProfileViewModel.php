@@ -90,4 +90,20 @@ class PlayerProfileViewModel
         $this->buildings = $buildings;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getShips()
+    {
+        return $this->ships;
+    }
+
+    /**
+     * @param mixed $ships
+     */
+    public function setShips($ships)
+    {
+        $this->ships = $ships;
+    }
+
 }

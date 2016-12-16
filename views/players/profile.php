@@ -30,7 +30,10 @@
     <div>
         <div class="list-group table-of-contents">
             <p class="list-group-item active">Ships</p>
-                <a href="#" class="list-group-item">Buy</a>
+                <?php
+                foreach($model->getShips() as $s){?>
+                    <a href="#"  class="list-group-item"><?= $s->getName().' Amount: '.$s->getAmount();?></a>
+               <?php } ?>
         </div>
     </div>
 </div>

@@ -16,6 +16,7 @@ use SoftUni\Services\ResourceServiceInterface;
 use SoftUni\Services\ResponseServiceInterface;
 use SoftUni\Services\PlayerService;
 use SoftUni\Services\PlayerServiceInterface;
+use SoftUni\Services\ShipServicesInterface;
 
 class PlayersController
 {
@@ -27,6 +28,7 @@ class PlayersController
     const START_PLANETS = 3;
     const INITIAL_RESOURCES = 400;
     const BUILDING_START_LVL = 0;
+    const SHIP_START_AMOUNT = 0;
 
     private $view;
     private $playerService;
@@ -36,6 +38,7 @@ class PlayersController
     private $islandService;
     private $resourceService;
     private $buildingServices;
+    private $shipServices;
 
 
     public function __construct(
@@ -46,7 +49,8 @@ class PlayersController
         SessionInterface $session,
         IslandServiceInterface $islandService,
         ResourceServiceInterface $resourceService,
-        BuildingServicesInterface $buildingServices)
+        BuildingServicesInterface $buildingServices,
+        ShipServicesInterface $shipServices)
     {
         $this->view = $view;
         $this->playerService = $playerService;
@@ -56,6 +60,7 @@ class PlayersController
         $this->islandService = $islandService;
         $this->resourceService = $resourceService;
         $this->buildingServices = $buildingServices;
+        $this->shipServices = $shipServices;
     }
 
     public function login()
@@ -160,6 +165,17 @@ class PlayersController
                     }
                 }
 
+                $ships = $this->shipServices->findAll();
+                //initiate ships
+                foreach ($ships as $s){
+                    $shipsCreated = $this->shipServices->add($islandID,$s->getId(),self::SHIP_START_AMOUNT);
+
+                    if(!$shipsCreated){
+                        $this->session->set("error","Resource Not Created Correctly!" );
+                        $this->responseService->redirect("players","login");
+                    }
+                }
+
             }
 ///////////////////////////////////////////////
 
@@ -185,6 +201,7 @@ class PlayersController
         $island_id = $this->session->get('activeIsland');
         $resourcesForIsland = $this->islandService->findIslandResources($island_id);
         $buildingsForIsland = $this->buildingServices->findAllBuildings($island_id);
+        $shipsForIsland = $this->shipServices->findAllShips($island_id);
 
         $viewModel = new PlayerProfileViewModel();
         $viewModel->setUsername($user->getUsername());
@@ -192,6 +209,7 @@ class PlayersController
         $viewModel->setIslands($islands);
         $viewModel->setIslandResources($resourcesForIsland);
         $viewModel->setBuildings($buildingsForIsland);
+        $viewModel->setShips($shipsForIsland);
 
 
         $this->view->render($viewModel);

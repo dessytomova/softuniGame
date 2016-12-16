@@ -115,14 +115,11 @@ class IslandService implements IslandServiceInterface
                   AND island_resources.resource_id = ? 
                   ";
         $stmt = $this->db->prepare($query);
-        $stmt->execute([$island_id,$resource_id]);
+        $stmt->execute([1111,$resource_id]);
 
         $result = $stmt->fetch();
         if(!$result){
-            return [];
-        }
-        else{
-            return $result;
+
         }
 
     }

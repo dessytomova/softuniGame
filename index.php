@@ -44,10 +44,10 @@ $app->registerDependency(\SoftUni\Services\PlayerServiceInterface::class, \SoftU
 $app->registerDependency(\SoftUni\Services\EncryptionServiceInterface::class, \SoftUni\Services\BCryptEncryptionService::class);
 $app->registerDependency(\SoftUni\Services\AuthenticationServiceInterface::class, \SoftUni\Services\AuthenticationService::class);
 $app->registerDependency(\SoftUni\Services\ResponseServiceInterface::class, \SoftUni\Services\ResponseService::class);
-//$app->registerDependency(\SoftUni\Services\CategoryServiceInterface::class, \SoftUni\Services\CategoryService::class);
 $app->registerDependency(\SoftUni\Services\IslandServiceInterface::class,\SoftUni\Services\IslandService::class);
 $app->registerDependency(\SoftUni\Services\ResourceServiceInterface::class,\SoftUni\Services\ResourceService::class);
 $app->registerDependency(\SoftUni\Services\BuildingServicesInterface::class,\SoftUni\Services\BuildingService::class);
+$app->registerDependency(\SoftUni\Services\ShipServicesInterface::class,\SoftUni\Services\ShipServices::class);
 $app->start();
 
 
