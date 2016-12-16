@@ -21,8 +21,8 @@
                         <?php }?>
                     </ul>
                 </div>
+                <a href = "<?=$this->url("players", "profile")?>" class = ' btn btn-primary'>Cancel</a>
                 <a href = "<?=$this->url("buildings", "addPost", [$model->getBuildingId(),$model->getLevel()]);?>" class = ' btn btn-warning'>Buy <?=$model->getName()?></a>
-
             </fieldset>
         </form>
     </div>

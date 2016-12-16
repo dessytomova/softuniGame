@@ -35,8 +35,6 @@ class View implements ViewInterface
 
     public function render($templateName = null, $model = null)
     {
-       // $this->responseService->redirect('resources','add');
-
 
         $controller = $this->mvcContext->getController();
         $action = $this->mvcContext->getAction();

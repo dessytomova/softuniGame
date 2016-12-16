@@ -79,7 +79,6 @@ class PlayersController
                 $this->responseService->redirect("players","login");
             }
 
-            $this->session->set('timeRecorded',time());
             $this->responseService->redirect("players", "profile");
         }
 

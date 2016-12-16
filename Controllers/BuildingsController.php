@@ -90,10 +90,6 @@ class BuildingsController
         return $price = $basicPrice*($level + $level * self::COEFFICIENT);
     }
 
-    private function calculateIncomePerHour($level){
-        return $income = $level*($level * self::COEFFICIENT);
-    }
-
     public function addPost($building_id,$level){
 
         $island_id = $this->session->get('activeIsland');

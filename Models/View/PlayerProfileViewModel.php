@@ -8,6 +8,7 @@ class PlayerProfileViewModel
     private $islands;
     private $islandResources;
     private $buildings;
+    private $ships;
 
     /**
      * @return mixed

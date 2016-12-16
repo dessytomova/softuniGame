@@ -9,7 +9,9 @@
 namespace SoftUni\Controllers;
 
 
+use SoftUni\Config\TimezoneConfig;
 use SoftUni\Core\MVC\SessionInterface;
+use SoftUni\Core\ViewInterface;
 use SoftUni\Services\AuthenticationServiceInterface;
 use SoftUni\Services\ResourceService;
 use SoftUni\Services\ResourceServiceInterface;
@@ -17,23 +19,25 @@ use SoftUni\Services\ResponseServiceInterface;
 
 class ResourcesController
 {
-    const COEFFICIENT_INCOME = 0.1;
 
     private $authenticationService;
     private $session;
     private $responseService;
     private $resourceService;
+    private $view;
 
     public function __construct(AuthenticationServiceInterface $authenticationService,
                                 SessionInterface $session,
                                 ResponseServiceInterface  $responseService,
-                                ResourceServiceInterface $resourceService)
+                                ResourceServiceInterface $resourceService,
+                                ViewInterface $view)
     {
 
         $this->authenticationService = $authenticationService;
         $this->session = $session;
         $this->responseService = $responseService;
         $this->resourceService = $resourceService;
+        $this->view = $view;
 
         if(!$this->authenticationService->isAuthenticated()) {
 
@@ -43,13 +47,30 @@ class ResourcesController
 
     }
 
-    public function add(){
+    public function updateResources(){
 
-        //var_dump($difference, $this->session->get('activeIsland'));
+        $incomes = $this->resourceService->getIncomeBase();
+
+        foreach ($incomes as $inc){
+
+            $incomePerHour = $this->resourceService->calculateIncomePerHour($inc->getLevel());
+            $lastUpdated = $this->resourceService->getUpdateTime($inc->getIslandId(), $inc->getResourceId());
+            $lastUpdatedS = strtotime($lastUpdated['updated_on']);
+            $now = date('Y-m-d H:i:s');
+
+            $differenceInSeconds = strtotime($now) -  $lastUpdatedS ;
+            $incomePerSeconds = ($incomePerHour/3600)* $differenceInSeconds;
+            $incomePerSeconds = round($incomePerSeconds,3);
+            var_dump($differenceInSeconds);
+            if($differenceInSeconds > 120 && $incomePerSeconds>0) {
+                $res= $this->resourceService->updateResourceIncome($inc->getIslandId(),$inc->getResourceId(),$incomePerSeconds, $now);
+               // var_dump($res);
+            }
+
+        }
+
     }
 
-    private function calculateIncomePerHour($level){
-        return $income = $level*($level * self::COEFFICIENT);
-    }
+
 
 }

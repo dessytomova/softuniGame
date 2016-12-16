@@ -3,7 +3,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css"/>
+    <script
+        src="http://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src = "../js/update.js"></script>
 </head>
+
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
