@@ -36,5 +36,16 @@
                <?php } ?>
         </div>
     </div>
+
+    <div>
+        <div class="list-group table-of-contents">
+            <p class="list-group-item active">Start Battle</p>
+            <div class="well">
+                <a href = "<?=$this->url("island", "listIslands");?>"" >Choose enemy</a>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 <!--<a href="<?=$this->url("players", "profileEdit", [$model->getId()]);?>">Edit your profile</a>--

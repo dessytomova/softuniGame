@@ -53,5 +53,10 @@ class IslandController
     }
 
 
+    public function listIslands(){
+
+        echo 'list nearest 20 islands, excluing mine';
+    }
+
 
 }

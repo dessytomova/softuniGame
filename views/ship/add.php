@@ -30,7 +30,7 @@
                 </div>
                 <div class="list-group table-of-contents">
                     <div class="form-group has-success">
-                        <label class="control-label" for="quality">Quality</label>
+                        <label class="control-label" for="quality">Quantity</label>
                         <input type="number" class="form-control" id="quality" name="quality"  min="1" max = "15" maxlength="5">
                     </div>
                 </div>

@@ -9,7 +9,7 @@ use SoftUni\Models\DB\ResourceIncome;
 class ResourceService implements ResourceServiceInterface {
 
 
-    const COEFFICIENT_INCOME = 0.1;
+    const COEFFICIENT_INCOME = 50;
     private $db;
 
     public function __construct(DatabaseInterface $db)
@@ -63,7 +63,7 @@ class ResourceService implements ResourceServiceInterface {
     }
 
     public function calculateIncomePerHour($level):float {
-        return $income = $level+($level * self::COEFFICIENT_INCOME);
+        return $income = ($level * self::COEFFICIENT_INCOME);
     }
 
     public function updateResourceIncome($island_id, $resource_id, $income,$date):bool{
