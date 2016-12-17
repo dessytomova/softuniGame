@@ -3,6 +3,7 @@ namespace SoftUni\Core;
 
 use SoftUni\Core\MVC\MVCContextInterface;
 use SoftUni\Core\MVC\SessionInterface;
+use SoftUni\Services\AuthenticationServiceInterface;
 use SoftUni\Services\ResourceServiceInterface;
 use SoftUni\Services\ResponseServiceInterface;
 
@@ -26,7 +27,9 @@ class View implements ViewInterface
      */
     private $session;
 
-    public function __construct(MVCContextInterface $MVCContext, SessionInterface $session, ResponseServiceInterface $responseService)
+    public function __construct(MVCContextInterface $MVCContext,
+                                SessionInterface $session,
+                                ResponseServiceInterface $responseService)
     {
         $this->mvcContext = $MVCContext;
         $this->session  = $session;
@@ -44,6 +47,18 @@ class View implements ViewInterface
             $model = $templateName;
             $templateName = $controller . DIRECTORY_SEPARATOR . $action;
         }
+
+        /*foreach ($model as $m){
+            if(is_scalar($m)){
+                $m = $this->escapeParam($m);
+            }
+            else{
+                foreach($m as $p){
+                    $p = $this->escapeParam($p);
+                }
+            }
+        }*/
+
         include self::VIEWS_FOLDER
             . DIRECTORY_SEPARATOR
             . self::PARTIALS_FOLDER
@@ -79,5 +94,7 @@ class View implements ViewInterface
         return $url;
     }
 
-
+   /* private function escapeParam($param){
+        return htmlspecialchars($param);
+    }*/
 }

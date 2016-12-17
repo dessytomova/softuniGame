@@ -108,4 +108,27 @@ class BuildingService implements BuildingServicesInterface
 
         return $stmt->execute([$level, $island_id,$building_id]);
     }
+
+    public function checkBuildingLevel($island_id,$building_id,$level):bool{
+
+        $query = "SELECT count(id) as res FROM island_buldings 
+                WHERE island_buldings.island_id = ?
+                AND island_buldings.building_id = ?
+                AND island_buldings.`level` >= ?";
+
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$island_id,$building_id,$level]);
+
+        $result = $stmt->fetch();
+
+        if($result['res'] >=1){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+
+
+    }
 }

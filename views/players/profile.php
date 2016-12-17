@@ -32,7 +32,7 @@
             <p class="list-group-item active">Ships</p>
                 <?php
                 foreach($model->getShips() as $s){?>
-                    <a href="#"  class="list-group-item"><?= $s->getName().' Amount: '.$s->getAmount();?></a>
+                    <a href="<?=$this->url("ship", "add", [$s->getShipId(), $s->getName()]);?>"  class="list-group-item"><?= $s->getName().' Amount: '.$s->getAmount();?></a>
                <?php } ?>
         </div>
     </div>

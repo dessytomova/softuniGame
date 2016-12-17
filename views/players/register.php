@@ -43,7 +43,8 @@
                 </div>
                 <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
-                        <button name="register" type="submit" class="btn btn-primary">Register</button>
+                        <button name="register" type="submit" class="btn btn-warning">Register</button>
+                        <a href = "<?=$this->url("players", "login")?>" class = 'btn btn-success'>Login</a>
                     </div>
                 </div>
             </fieldset>

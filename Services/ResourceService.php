@@ -30,9 +30,10 @@ class ResourceService implements ResourceServiceInterface {
 
     public function addResources($island_id,$resource_id,$amount): bool
     {
-        $query = "INSERT INTO island_resources(island_id,resource_id,amount) VALUES(?,?,?)";
+        $now = date('Y-m-d H:i:s');
+        $query = "INSERT INTO island_resources(island_id,resource_id,amount, updated_on) VALUES(?,?,?,?)";
         $stmt = $this->db->prepare($query);
-        return $stmt->execute([$island_id,$resource_id,$amount]);
+        return $stmt->execute([$island_id,$resource_id,$amount, $now]);
     }
 
     public function updateResources($island_id,$resource_id,$amount): bool
@@ -91,6 +92,23 @@ class ResourceService implements ResourceServiceInterface {
         $res = $stmt->fetch();
 
         return $res;
+    }
+
+
+    public function updateResourceUpdateTime($island_id, $resource_id):bool{
+
+        $now = date('Y-m-d H:i:s');
+
+        $query = "UPDATE island_resources SET updated_on = ?
+                  WHERE island_resources.island_id = ?
+                  AND island_resources.resource_id = ?
+                  LIMIT 1";
+
+        $stmt = $this->db->prepare($query);
+        $res = $stmt->execute([$now, $island_id,$resource_id]);
+
+        return $res;
+
     }
 
 }

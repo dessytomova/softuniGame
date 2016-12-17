@@ -63,21 +63,23 @@ class PlayerService implements PlayerServiceInterface
 
     public function register($username, $password): bool
     {
-        $query = "INSERT INTO players (username, password) VALUES (?, ?)";
-        $stmt = $this->db->prepare($query);
+            $query = "INSERT INTO players (username, password) VALUES (?, ?)";
+            $stmt = $this->db->prepare($query);
 
-        $res = $stmt->execute(
-            [
-                $username,
-                $this->encryptionService->hash($password)
-            ]
-        );
+            $res = $stmt->execute(
+                [
+                    $username,
+                    $this->encryptionService->hash($password)
+                ]
+            );
 
-        return $res;
+            return $res;
+
     }
 
     public function findOne($id):Player
     {
+
         $query = "
           SELECT 
               id, username, password
@@ -86,7 +88,6 @@ class PlayerService implements PlayerServiceInterface
           WHERE 
             id = ?
           LIMIT 1";
-
 
         $stmt = $this->db->prepare($query);
         $stmt->execute(
@@ -103,6 +104,7 @@ class PlayerService implements PlayerServiceInterface
 
     public function findByName($username):Player
     {
+
         $query = "
           SELECT 
               id, username, password
@@ -111,7 +113,6 @@ class PlayerService implements PlayerServiceInterface
           WHERE 
             username = ?
           LIMIT 1";
-
 
         $stmt = $this->db->prepare($query);
         $stmt->execute(
@@ -146,6 +147,5 @@ class PlayerService implements PlayerServiceInterface
                 $model->getId()
             ]
         );
-
     }
 }

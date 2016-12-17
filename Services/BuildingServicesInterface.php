@@ -18,5 +18,6 @@ interface BuildingServicesInterface
     public function findBuildingName($building_id):string;
     public function checkValidBuild($playerId, $island_id,$building_id,$nextLevel):array;
     public function updateBuilding($island_id, $building_id, $level): bool;
+    public function checkBuildingLevel($island_id,$building_id,$level):bool;
 
     }

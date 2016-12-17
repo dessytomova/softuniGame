@@ -61,16 +61,13 @@ class ResourcesController
             $differenceInSeconds = strtotime($now) -  $lastUpdatedS ;
             $incomePerSeconds = ($incomePerHour/3600)* $differenceInSeconds;
             $incomePerSeconds = round($incomePerSeconds,3);
-            var_dump($differenceInSeconds);
+
             if($differenceInSeconds > 120 && $incomePerSeconds>0) {
                 $res= $this->resourceService->updateResourceIncome($inc->getIslandId(),$inc->getResourceId(),$incomePerSeconds, $now);
-               // var_dump($res);
             }
 
         }
 
     }
-
-
 
 }

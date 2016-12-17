@@ -17,4 +17,11 @@ interface ShipServicesInterface
 
     public function findAllShips($island_id):\Generator;
 
-}
+    public function getBuildingRequirements($island_id):\Generator;
+
+    public function checkId($ship_id):array;
+
+    public function getShipCost($ship_id):\Generator;
+
+    public function updateShips($amount, $island_id, $ship_id): bool;
+    }

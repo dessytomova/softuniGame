@@ -102,6 +102,11 @@ class PlayersController
         $username = $bindingModel->getUsername();
         $password = $bindingModel->getPassword();
 
+        if(mb_strlen($username)< 3 || mb_strlen($password)< 3 ){
+            $this->session->set("error","Username And Password Should Be 3 Symbols Min!" );
+            $this->responseService->redirect("players","login");
+        }
+
         if ($this->playerService->register($username, $password)) {
 
             /////////////////////////////////////////////////////
@@ -264,5 +269,10 @@ class PlayersController
         $this->playerService->edit($bindingModel);
 
         $this->responseService->redirect("players", "profile", [$id]);
+    }
+
+    public function logout(){
+        $this->authenticationService->logout();
+        $this->responseService->redirect("players","login");
     }
 }
