@@ -10,6 +10,8 @@ namespace SoftUni\Services;
 
 
 use SoftUni\Adapter\DatabaseInterface;
+use SoftUni\Controllers\ResourcesController;
+use SoftUni\Core\ViewInterface;
 use SoftUni\Models\DB\Building;
 use SoftUni\Models\DB\BuildingCost;
 use SoftUni\Models\DB\IslandBuildings;
@@ -17,10 +19,13 @@ use SoftUni\Models\DB\IslandBuildings;
 class BuildingService implements BuildingServicesInterface
 {
     private $db;
+    private $resourceService;
 
-    public function __construct(DatabaseInterface $db)
+
+    public function __construct(DatabaseInterface $db, ResourceServiceInterface $resourceService)
     {
         $this->db = $db;
+        $this->resourceService = $resourceService;
     }
 
     public function add($island_id, $building_id, $level): bool
@@ -100,6 +105,9 @@ class BuildingService implements BuildingServicesInterface
 
     public function updateBuilding($island_id, $building_id, $level): bool
     {
+
+        $this->resourceService->updateAllResources();
+
         $query = "UPDATE  island_buldings SET level = ?
                   WHERE island_buldings.island_id = ? 
                   and island_buldings.building_id = ?  ";

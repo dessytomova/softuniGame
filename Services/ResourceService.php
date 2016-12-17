@@ -111,4 +111,28 @@ class ResourceService implements ResourceServiceInterface {
 
     }
 
+    public function updateAllResources()
+    {
+        $incomes = $this->getIncomeBase();
+
+
+        foreach ($incomes as $inc) {
+
+            $incomePerHour = $this->calculateIncomePerHour($inc->getLevel());
+            $lastUpdated = $this->getUpdateTime($inc->getIslandId(), $inc->getResourceId());
+
+            $lastUpdatedS = strtotime($lastUpdated['updated_on']);
+            $now = date('Y-m-d H:i:s');
+
+            $differenceInSeconds = strtotime($now) - $lastUpdatedS;
+
+            $incomePerSeconds = ($incomePerHour / 3600) * $differenceInSeconds;
+            $incomePerSeconds = round($incomePerSeconds, 3);
+
+            if ($differenceInSeconds > 0 && $incomePerSeconds >= 0) {
+                 $this->updateResourceIncome($inc->getIslandId(), $inc->getResourceId(), $incomePerSeconds, $now);
+            }
+
+        }
+    }
 }

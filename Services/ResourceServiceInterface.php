@@ -21,5 +21,6 @@ interface ResourceServiceInterface
     public function updateResourceIncome($island_id, $resource_id, $income, $date):bool;
     public function getUpdateTime($island_id,$resource_id);
     public function updateResourceUpdateTime($island_id, $resource_id):bool;
+    public function updateAllResources();
 
     }

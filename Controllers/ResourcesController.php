@@ -49,7 +49,8 @@ class ResourcesController
 
     public function updateResources(){
 
-        $incomes = $this->resourceService->getIncomeBase();
+      /*  $incomes = $this->resourceService->getIncomeBase();
+        $res = false;
 
         foreach ($incomes as $inc){
 
@@ -66,8 +67,10 @@ class ResourcesController
                 $res= $this->resourceService->updateResourceIncome($inc->getIslandId(),$inc->getResourceId(),$incomePerSeconds, $now);
             }
 
-        }
-
+            return $res;
+        }*/
+        $this->resourceService->updateAllResources();
+        $this->responseService->redirect("players","profile");
     }
 
 }

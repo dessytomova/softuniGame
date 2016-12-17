@@ -137,8 +137,6 @@ class BuildingsController
 
                 if($this->buildingServices->updateBuilding($island_id,$building_id,$level)){
 
-                  //  $this->resourceService->updateResourceUpdateTime($island_id,$resourceID);
-                    // TO DO update resource up time
                     $this->responseService->redirect("players","profile");
                 }
                 else{

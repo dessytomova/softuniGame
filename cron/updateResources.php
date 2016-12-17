@@ -16,8 +16,8 @@ Database::setInstance(DbConfig::DB_HOST, DbConfig::DB_USER, DbConfig::DB_PASS, D
 
 $resourceService = new \SoftUni\Services\ResourceService(Database::getInstance($dbInstanceName));
 
-$incomes = $resourceService->getIncomeBase();
-
+$incomes = $resourceService->updateAllResources();
+/*
 foreach ($incomes as $inc){
 
     $incomePerHour = $resourceService->calculateIncomePerHour($inc->getLevel());
@@ -31,8 +31,9 @@ foreach ($incomes as $inc){
     $incomePerSeconds = ($incomePerHour/3600)* $differenceInSeconds;
     $incomePerSeconds = round($incomePerSeconds,3);
 
-    if($differenceInSeconds > 120 && $incomePerSeconds>0) {
+    if($differenceInSeconds > 120 && $incomePerSeconds>=0) {
        $res= $resourceService->updateResourceIncome($inc->getIslandId(),$inc->getResourceId(),$incomePerSeconds, $now);
     }
 
 }
+*/
