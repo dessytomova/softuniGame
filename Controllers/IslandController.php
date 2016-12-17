@@ -10,6 +10,8 @@ namespace SoftUni\Controllers;
 
 
 use SoftUni\Core\MVC\SessionInterface;
+use SoftUni\Core\ViewInterface;
+use SoftUni\Models\View\IslandNearEnemiesViewModel;
 use SoftUni\Services\AuthenticationServiceInterface;
 use SoftUni\Services\IslandServiceInterface;
 use SoftUni\Services\ResponseServiceInterface;
@@ -23,6 +25,7 @@ class IslandController
     private $authenticationService;
     private $islandService;
     private $responseService;
+    private $view;
 
     /**
      * IslandController constructor.
@@ -30,13 +33,14 @@ class IslandController
     public function __construct(AuthenticationServiceInterface $authenticationService,
                                 IslandServiceInterface $islandService,
                                 SessionInterface $session,
-                                ResponseServiceInterface  $responseService)
+                                ResponseServiceInterface  $responseService, ViewInterface $view)
     {
 
         $this->authenticationService = $authenticationService;
         $this->islandService = $islandService;
         $this->session = $session;
         $this->responseService = $responseService;
+        $this->view = $view;
 
         if(!$this->authenticationService->isAuthenticated()) {
 
@@ -55,7 +59,19 @@ class IslandController
 
     public function listIslands(){
 
-        echo 'list nearest 20 islands, excluing mine';
+        $islandID = $this->session->get('activeIsland');
+        $playerID = $this->session->get('id');
+        $nearestIslands = $this->islandService->getNearestEnemies($islandID,$playerID);
+
+
+
+        $viewModel = new IslandNearEnemiesViewModel();
+        $viewModel->setIslandId($islandID);
+        $viewModel->setPlayerId($playerID);
+        $viewModel->setNearestIslands($nearestIslands);
+
+        $this->view->render($viewModel);
+
     }
 
 

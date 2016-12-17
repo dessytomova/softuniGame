@@ -10,6 +10,7 @@ namespace SoftUni\Services;
 
 use SoftUni\Adapter\DatabaseInterface;
 use SoftUni\Models\DB\Island;
+use SoftUni\Models\DB\IslandBattle;
 use SoftUni\Models\DB\IslandResource;
 
 class IslandService implements IslandServiceInterface
@@ -126,5 +127,38 @@ class IslandService implements IslandServiceInterface
     }
 
 
+    public function getNearestEnemies($island_id,$player_id):\Generator
+    {
+        $query = "SELECT id AS island_id, name,x,y, player_id, ROUND(SQRT(
+                    POW((x - 
+                    (
+                        SELECT x FROM island
+                        WHERE id = ?
+                        AND player_id = ?
+                    )
+                    ),2) +
+                    POW((y - 
+                    (	SELECT y from island
+                        WHERE id = ?
+                        AND player_id = ?)
+                    ),2)
+                    ),3) AS distance FROM island
+                    WHERE player_id != ?
+                    #HAVING distance <25
+                    ORDER BY distance ASC
+                    LIMIT 50
+                    ";
+
+
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$island_id,$player_id,$island_id,$player_id,$player_id]);
+
+      /*  while ($result = $stmt->fetchObject(IslandResource::class)) {
+            yield $result;
+        }*/
+      while($row = $stmt->fetchObject(IslandBattle::class)){
+        yield $row;
+      }
+    }
 
 }

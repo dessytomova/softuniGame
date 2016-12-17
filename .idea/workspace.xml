@@ -24,39 +24,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ResourceService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Services/ResourceService.php">
+      <file leaf-file-name="IslandController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/IslandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="352">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
-                <element signature="e#35#73#0#PHP" expanded="true" />
-                <marker date="1481995650417" expanded="true" signature="419:459" ph="SELECT id, n... resources" />
-                <marker date="1481995650417" expanded="true" signature="419:461" ph="SELECT id, n... resources" />
-                <marker date="1481995650417" expanded="true" signature="775:861" ph="INSERT INTO island... " />
-                <marker date="1481995650417" expanded="true" signature="1086:1184" ph="UPDATE islan... " />
-                <marker date="1481995650417" expanded="true" signature="1086:1185" ph="UPDATE islan... " />
-                <marker date="1481995650417" expanded="true" signature="1086:1200" ph="UPDATE islan... " />
-                <marker date="1481995650417" expanded="true" signature="1093:1109" ph="INSERT INTO island_resources... " />
-                <marker date="1481995650417" expanded="true" signature="1388:1715" ph="SELECT islan... island_buldings" />
-                <marker date="1481995650417" expanded="true" signature="1388:1758" ph="SELECT islan... island_buldings" />
-                <marker date="1481995650417" expanded="true" signature="1394:1715" ph="select islan... island_buldings" />
-                <marker date="1481995650417" expanded="true" signature="2183:2376" ph="UPDATE islan... " />
-                <marker date="1481995650417" expanded="true" signature="2183:2402" ph="UPDATE islan... " />
-                <marker date="1481995650417" expanded="true" signature="2632:2785" ph="SELECT updat... island_resources" />
-                <marker date="1481995650417" expanded="true" signature="3098:3276" ph="UPDATE islan... " />
+                <element signature="e#124#162#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/ship/add.php">
+      <file leaf-file-name="listIslands.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/island/listIslands.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="32" column="75" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="75" />
+            <state relative-caret-position="350">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding>
-                <element signature="e#6#161#0#PHP" expanded="true" />
+                <element signature="e#6#118#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShipServices.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="902">
+              <caret line="101" column="31" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="31" />
+              <folding>
+                <element signature="e#120#158#0#PHP" expanded="true" />
+                <marker date="1481945201469" expanded="true" signature="567:605" ph="SELECT id, n... ships" />
+                <marker date="1481945201469" expanded="true" signature="851:885" ph="SELECT count... ships" />
+                <marker date="1481945201469" expanded="true" signature="851:898" ph="SELECT count... ships" />
+                <marker date="1481945201469" expanded="true" signature="851:899" ph="SELECT id, n... ships" />
+                <marker date="1481945201469" expanded="true" signature="1117:1182" ph="INSERT INTO islands_ships... " />
+                <marker date="1481945201469" expanded="true" signature="1379:1542" ph="SELECT ship_... islands_ships" />
+                <marker date="1481945201469" expanded="true" signature="1831:2217" ph="SELECT ship_... ship_buildings" />
+                <marker date="1481945201469" expanded="true" signature="2498:2686" ph="SELECT * FRO... ships_cost_resources" />
+                <marker date="1481945201469" expanded="true" signature="2498:2687" ph="SELECT ship_... ships_cost_resources" />
+                <marker date="1481945201469" expanded="true" signature="3001:3170" ph="UPDATE islan... " />
               </folding>
             </state>
           </provider>
@@ -65,8 +73,8 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/players/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="43" column="63" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="63" />
+            <state relative-caret-position="25">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
               <folding>
                 <element signature="e#6#114#0#PHP" expanded="true" />
               </folding>
@@ -74,94 +82,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IslandController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/IslandController.php">
+      <file leaf-file-name="IslandNearEnemiesViewModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/View/IslandNearEnemiesViewModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-              <folding>
-                <element signature="e#124#162#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Application.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="168" column="60" selection-start-line="168" selection-start-column="60" selection-end-line="168" selection-end-column="60" />
-              <folding>
-                <element signature="e#31#72#0#PHP" expanded="true" />
-                <element signature="e#1114#1302#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/BuildingsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="27" />
-              <folding>
-                <element signature="e#122#160#0#PHP" expanded="true" />
-                <element signature="e#775#1789#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourcesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/ResourcesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="72" column="62" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-              <folding>
-                <element signature="e#123#157#0#PHP" expanded="true" />
-                <element signature="e#1432#2323#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Services/BuildingService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
-              <folding>
-                <element signature="e#120#158#0#PHP" expanded="true" />
-                <marker date="1481983451088" expanded="true" signature="729:799" ph="INSERT INTO island... " />
-                <marker date="1481983451088" expanded="true" signature="984:1026" ph="SELECT id, n... buildings" />
-                <marker date="1481983451088" expanded="true" signature="1292:1504" ph="SELECT islan... island_buldings" />
-                <marker date="1481983451088" expanded="true" signature="1786:2175" ph="SELECT build... building_cost_resources" />
-                <marker date="1481983451088" expanded="true" signature="2457:2526" ph="SELECT islan... island_buldings" />
-                <marker date="1481983451088" expanded="true" signature="2886:3207" ph="SELECT build... buildings" />
-                <marker date="1481983451088" expanded="true" signature="2886:3208" ph="SELECT count... island" />
-                <marker date="1481983451088" expanded="true" signature="3549:3695" ph="UPDATE islan... " />
-                <marker date="1481983451088" expanded="true" signature="3555:3585" ph="INSERT INTO island_buldings... " />
-                <marker date="1481983451088" expanded="true" signature="3915:3977" ph="SELECT cout(... island_buldings" />
-                <marker date="1481983451088" expanded="true" signature="3915:4113" ph="SELECT count... island_buldings" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/players/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
+            <state relative-caret-position="652">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShipController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BuildingAddViewModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/View/BuildingAddViewModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/PlayersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="219" column="33" selection-start-line="219" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+              <folding>
+                <element signature="e#38#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IslandService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/IslandService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+              <folding>
+                <element signature="e#119#157#0#PHP" expanded="true" />
+                <marker date="1482004786876" expanded="true" signature="509:563" ph="INSERT INTO island... " />
+                <marker date="1482004786876" expanded="true" signature="733:783" ph="SELECT ${$x}... island" />
+                <marker date="1482004786876" expanded="true" signature="733:784" ph="SELECT ${$x}... island" />
+                <marker date="1482004786876" expanded="true" signature="733:799" ph="SELECT ${$x}... island" />
+                <marker date="1482004786876" expanded="true" signature="1002:1046" ph="SELECT x, y island" />
+                <marker date="1482004786876" expanded="true" signature="1002:1067" ph="SELECT id as... island" />
+                <marker date="1482004786876" expanded="true" signature="1002:1093" ph="SELECT id as... island" />
+                <marker date="1482004786876" expanded="true" signature="1322:1380" ph="SELECT * FRO... island" />
+                <marker date="1482004786876" expanded="true" signature="1642:1760" ph="SELECT id fr... island" />
+                <marker date="1482004786876" expanded="true" signature="1988:2105" ph="SELECT id fr... island" />
+                <marker date="1482004786876" expanded="true" signature="2350:2557" ph="SELECT islan... island_resources" />
+                <marker date="1482004786876" expanded="true" signature="2858:3018" ph="SELECT resou... island_resources" />
+                <marker date="1482004786876" expanded="true" signature="3381:4042" ph="SELECT id AS... island" />
+                <marker date="1482004786876" expanded="true" signature="3381:4043" ph="select id, x... island" />
+                <marker date="1482004786876" expanded="true" signature="3381:4403" ph="select id, x... island" />
+                <marker date="1482004786876" expanded="true" signature="3514:3613" ph="SELECT x FRO... island" />
+                <marker date="1482004786876" expanded="true" signature="3715:3814" ph="SELECT y fro... island" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/buildings/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShipController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/ShipController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
+            <state relative-caret-position="202">
               <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
               <folding>
                 <element signature="e#123#161#0#PHP" expanded="true" />
@@ -185,11 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/categories/add.php" />
-        <option value="$PROJECT_DIR$/Models/DB/Building.php" />
-        <option value="$PROJECT_DIR$/Models/DB/BuildingCost.php" />
-        <option value="$PROJECT_DIR$/Models/View/BuildingAddViewModel.php" />
-        <option value="$PROJECT_DIR$/Services/IslandServiceInterface.php" />
         <option value="$PROJECT_DIR$/Config/DbConfig.php" />
         <option value="$PROJECT_DIR$/Models/DB/ResourceIncome.php" />
         <option value="$PROJECT_DIR$/Config/TimezoneConfig.php" />
@@ -203,7 +193,6 @@
         <option value="$PROJECT_DIR$/Models/View/PlayerProfileViewModel.php" />
         <option value="$PROJECT_DIR$/Models/DB/IslandShips.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Services/IslandService.php" />
         <option value="$PROJECT_DIR$/js/update.js" />
         <option value="$PROJECT_DIR$/views/partials/header.php" />
         <option value="$PROJECT_DIR$/views/players/login.php" />
@@ -228,14 +217,20 @@
         <option value="$PROJECT_DIR$/Services/ResourceServiceInterface.php" />
         <option value="$PROJECT_DIR$/Services/BuildingService.php" />
         <option value="$PROJECT_DIR$/cron/updateResources.php" />
-        <option value="$PROJECT_DIR$/cron/test.php" />
         <option value="$PROJECT_DIR$/views/ship/add.php" />
         <option value="$PROJECT_DIR$/views/players/profile.php" />
-        <option value="$PROJECT_DIR$/Controllers/IslandController.php" />
         <option value="$PROJECT_DIR$/views/players/register.php" />
         <option value="$PROJECT_DIR$/Core/Application.php" />
         <option value="$PROJECT_DIR$/Controllers/BuildingsController.php" />
         <option value="$PROJECT_DIR$/Services/ResourceService.php" />
+        <option value="$PROJECT_DIR$/cron/test.php" />
+        <option value="$PROJECT_DIR$/Models/DB/Island.php" />
+        <option value="$PROJECT_DIR$/Models/DB/IslandBattle.php" />
+        <option value="$PROJECT_DIR$/Services/IslandServiceInterface.php" />
+        <option value="$PROJECT_DIR$/Models/View/IslandNearEnemiesViewModel.php" />
+        <option value="$PROJECT_DIR$/Controllers/IslandController.php" />
+        <option value="$PROJECT_DIR$/Services/IslandService.php" />
+        <option value="$PROJECT_DIR$/views/island/listIslands.php" />
       </list>
     </option>
   </component>
@@ -247,7 +242,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
+    <option name="x" value="-15" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -376,6 +371,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="island" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="buildings" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -407,6 +420,10 @@
               <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -419,10 +436,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,15 +563,15 @@
       <workItem from="1481282580557" duration="9389000" />
       <workItem from="1481373746875" duration="9330000" />
       <workItem from="1481537851020" duration="37774000" />
-      <workItem from="1481628100758" duration="177404000" />
+      <workItem from="1481628100758" duration="184947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268176000" />
+    <option name="totallyTimeSpent" value="275719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1936" height="1056" extended-state="0" />
+    <frame x="-15" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18702702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -598,38 +611,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/players/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="29" column="81" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/AuthenticationService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/PlayerServiceInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adapter/DatabaseStatement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Adapter/DatabaseStatementInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -700,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/buildings/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#157#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -717,14 +688,6 @@
           <folding>
             <marker date="1481902698864" expanded="true" signature="1484:1518" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/View/BuildingAddViewModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,14 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="8" column="51" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/PlayersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -840,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/IslandServiceInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/DB/BuildingCost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-748">
@@ -861,48 +808,6 @@
         <state relative-caret-position="500">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2252">
-          <caret line="101" column="31" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="31" />
-          <folding>
-            <element signature="e#120#158#0#PHP" expanded="true" />
-            <marker date="1481945201469" expanded="true" signature="567:605" ph="SELECT id, n... ships" />
-            <marker date="1481945201469" expanded="true" signature="851:885" ph="SELECT count... ships" />
-            <marker date="1481945201469" expanded="true" signature="851:898" ph="SELECT count... ships" />
-            <marker date="1481945201469" expanded="true" signature="851:899" ph="SELECT id, n... ships" />
-            <marker date="1481945201469" expanded="true" signature="1117:1182" ph="INSERT INTO islands_ships... " />
-            <marker date="1481945201469" expanded="true" signature="1379:1542" ph="SELECT ship_... islands_ships" />
-            <marker date="1481945201469" expanded="true" signature="1831:2217" ph="SELECT ship_... ship_buildings" />
-            <marker date="1481945201469" expanded="true" signature="2498:2686" ph="SELECT * FRO... ships_cost_resources" />
-            <marker date="1481945201469" expanded="true" signature="2498:2687" ph="SELECT ship_... ships_cost_resources" />
-            <marker date="1481945201469" expanded="true" signature="3001:3170" ph="UPDATE islan... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/IslandService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-          <folding>
-            <element signature="e#119#157#0#PHP" expanded="true" />
-            <marker date="1481893900474" expanded="true" signature="473:527" ph="INSERT INTO island... " />
-            <marker date="1481893900474" expanded="true" signature="697:747" ph="SELECT ${$x}... island" />
-            <marker date="1481893900474" expanded="true" signature="697:748" ph="SELECT ${$x}... island" />
-            <marker date="1481893900474" expanded="true" signature="697:763" ph="SELECT ${$x}... island" />
-            <marker date="1481893900474" expanded="true" signature="966:1010" ph="SELECT x, y island" />
-            <marker date="1481893900474" expanded="true" signature="966:1031" ph="SELECT id as... island" />
-            <marker date="1481893900474" expanded="true" signature="966:1057" ph="SELECT id as... island" />
-            <marker date="1481893900474" expanded="true" signature="1286:1344" ph="SELECT * FRO... island" />
-            <marker date="1481893900474" expanded="true" signature="1606:1724" ph="SELECT id fr... island" />
-            <marker date="1481893900474" expanded="true" signature="1952:2069" ph="SELECT id fr... island" />
-            <marker date="1481893900474" expanded="true" signature="2314:2521" ph="SELECT islan... island_resources" />
-            <marker date="1481893900474" expanded="true" signature="2822:2982" ph="SELECT resou... island_resources" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,40 +861,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cron/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/ship/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="32" column="75" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="75" />
           <folding>
             <element signature="e#6#161#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/players/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="43" column="63" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="63" />
-          <folding>
-            <element signature="e#6#114#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/IslandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-          <folding>
-            <element signature="e#124#162#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1080,14 +957,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cron/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="25" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB/Island.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="23" selection-start-line="13" selection-start-column="3" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB/IslandBattle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/IslandServiceInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/View/BuildingAddViewModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/View/IslandNearEnemiesViewModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/PlayersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="219" column="33" selection-start-line="219" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/players/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/buildings/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/ShipController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
+        <state relative-caret-position="202">
           <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
           <folding>
             <element signature="e#123#161#0#PHP" expanded="true" />
             <element signature="e#3051#3272#0#PHP" expanded="false" />
             <element signature="e#3281#3497#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/IslandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="e#124#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="31" />
+          <folding>
+            <element signature="e#120#158#0#PHP" expanded="true" />
+            <marker date="1481945201469" expanded="true" signature="567:605" ph="SELECT id, n... ships" />
+            <marker date="1481945201469" expanded="true" signature="851:885" ph="SELECT count... ships" />
+            <marker date="1481945201469" expanded="true" signature="851:898" ph="SELECT count... ships" />
+            <marker date="1481945201469" expanded="true" signature="851:899" ph="SELECT id, n... ships" />
+            <marker date="1481945201469" expanded="true" signature="1117:1182" ph="INSERT INTO islands_ships... " />
+            <marker date="1481945201469" expanded="true" signature="1379:1542" ph="SELECT ship_... islands_ships" />
+            <marker date="1481945201469" expanded="true" signature="1831:2217" ph="SELECT ship_... ship_buildings" />
+            <marker date="1481945201469" expanded="true" signature="2498:2686" ph="SELECT * FRO... ships_cost_resources" />
+            <marker date="1481945201469" expanded="true" signature="2498:2687" ph="SELECT ship_... ships_cost_resources" />
+            <marker date="1481945201469" expanded="true" signature="3001:3170" ph="UPDATE islan... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/IslandService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+          <folding>
+            <element signature="e#119#157#0#PHP" expanded="true" />
+            <marker date="1482004786876" expanded="true" signature="509:563" ph="INSERT INTO island... " />
+            <marker date="1482004786876" expanded="true" signature="733:783" ph="SELECT ${$x}... island" />
+            <marker date="1482004786876" expanded="true" signature="733:784" ph="SELECT ${$x}... island" />
+            <marker date="1482004786876" expanded="true" signature="733:799" ph="SELECT ${$x}... island" />
+            <marker date="1482004786876" expanded="true" signature="1002:1046" ph="SELECT x, y island" />
+            <marker date="1482004786876" expanded="true" signature="1002:1067" ph="SELECT id as... island" />
+            <marker date="1482004786876" expanded="true" signature="1002:1093" ph="SELECT id as... island" />
+            <marker date="1482004786876" expanded="true" signature="1322:1380" ph="SELECT * FRO... island" />
+            <marker date="1482004786876" expanded="true" signature="1642:1760" ph="SELECT id fr... island" />
+            <marker date="1482004786876" expanded="true" signature="1988:2105" ph="SELECT id fr... island" />
+            <marker date="1482004786876" expanded="true" signature="2350:2557" ph="SELECT islan... island_resources" />
+            <marker date="1482004786876" expanded="true" signature="2858:3018" ph="SELECT resou... island_resources" />
+            <marker date="1482004786876" expanded="true" signature="3381:4042" ph="SELECT id AS... island" />
+            <marker date="1482004786876" expanded="true" signature="3381:4043" ph="select id, x... island" />
+            <marker date="1482004786876" expanded="true" signature="3381:4403" ph="select id, x... island" />
+            <marker date="1482004786876" expanded="true" signature="3514:3613" ph="SELECT x FRO... island" />
+            <marker date="1482004786876" expanded="true" signature="3715:3814" ph="SELECT y fro... island" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/island/listIslands.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="e#6#118#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
