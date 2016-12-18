@@ -15,7 +15,8 @@ class IslandShips
     private $island_id;
     private $amount;
     private $name;
-
+    private $demage;
+    private $health;
     /**
      * @return mixed
      */
@@ -79,5 +80,31 @@ class IslandShips
     {
         $this->name = $name;
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getDemage()
+    {
+        return $this->demage;
+    }
+
+    /**
+     * @param mixed $demage
+     */
+    public function setDemage($demage)
+    {
+        $this->demage = $demage;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHealth()
+    {
+        return $this->health;
+    }
+
 
 }

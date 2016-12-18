@@ -45,7 +45,7 @@ class ShipController
                                 ResourceServiceInterface $resourceService)
     {
 
-        $this->authenticationService = $authenticationService;;
+        $this->authenticationService = $authenticationService;
         $this->session = $session;
         $this->responseService = $responseService;
         $this->view = $view;

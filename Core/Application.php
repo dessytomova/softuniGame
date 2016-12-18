@@ -166,8 +166,9 @@ class Application
         foreach ($parameterClass->getProperties() as $field) {
             $field->setAccessible(true);
             if (array_key_exists($field->getName(), $form)) {
-                $field->setValue($instance, htmlspecialchars($form[$field->getName()]));
-                //var_dump($field->getValue())
+                //$field->setValue($instance, htmlspecialchars($form[$field->getName()]));
+                $field->setValue($instance, $form[$field->getName()]);
+
             }
         }
 

@@ -22,5 +22,6 @@ interface IslandServiceInterface
     public function findIslandResources($island_id):\Generator;
     public function availableAmountResource($island_id, $resource_id):array;
     public function getNearestEnemies($island_id,$player_id):\Generator;
+    public function checkId($ship_id):bool;
 
 }

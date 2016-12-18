@@ -49,6 +49,7 @@ $app->registerDependency(\SoftUni\Services\IslandServiceInterface::class,\SoftUn
 $app->registerDependency(\SoftUni\Services\ResourceServiceInterface::class,\SoftUni\Services\ResourceService::class);
 $app->registerDependency(\SoftUni\Services\BuildingServicesInterface::class,\SoftUni\Services\BuildingService::class);
 $app->registerDependency(\SoftUni\Services\ShipServicesInterface::class,\SoftUni\Services\ShipServices::class);
+$app->registerDependency(\SoftUni\Services\BattleSevicesInterface::class,\SoftUni\Services\BattleServices::class);
 
 if(mb_strlen($controllerName)==0){
     $responseService->redirect('players','login');

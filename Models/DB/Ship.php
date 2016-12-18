@@ -13,6 +13,8 @@ class Ship
 {
     private $id;
     private $name;
+    private $health;
+    private $demage;
 
     /**
      * @return mixed
@@ -44,6 +46,22 @@ class Ship
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHealth()
+    {
+        return $this->health;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDemage()
+    {
+        return $this->demage;
     }
 
 

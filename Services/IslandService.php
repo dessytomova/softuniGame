@@ -161,4 +161,21 @@ class IslandService implements IslandServiceInterface
       }
     }
 
+    public function checkId($ship_id):bool
+    {
+        $query = "SELECT count(id) as res FROM island WHERE id = ? ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$ship_id]);
+
+        $result = $stmt->fetch();
+
+        if($result['res'] < 1){
+            return false;
+        }
+        else{
+            return true;
+        }
+
+    }
+
 }

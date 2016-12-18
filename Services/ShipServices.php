@@ -27,7 +27,7 @@ class ShipServices implements ShipServicesInterface
 
     public function findAll():\Generator
     {
-        $query = "SELECT id, name FROM ships ORDER BY id";
+        $query = "SELECT id, name, health, demage FROM ships ORDER BY id";
         $stmt = $this->db->prepare($query);
         $stmt->execute();
 
@@ -55,7 +55,7 @@ class ShipServices implements ShipServicesInterface
 
     public function findAllShips($island_id):\Generator
     {
-        $query = "SELECT ship_id,island_id,amount,ships.name FROM islands_ships     
+        $query = "SELECT ship_id,island_id,amount,ships.name, ships.health, ships.demage FROM islands_ships     
 				  INNER JOIN ships on ships.id = islands_ships.ship_id
                   WHERE island_id = ?";
         $stmt = $this->db->prepare($query);
@@ -111,6 +111,51 @@ class ShipServices implements ShipServicesInterface
             return $stmt->execute([$amount, $island_id, $ship_id]);
         }
         return false;
+    }
+
+    public function updateShipsBattle($amount, $island_id, $ship_id): bool
+    {
+        $query = "UPDATE  islands_ships SET islands_ships.amount =  ?
+                      WHERE islands_ships.island_id = ? 
+                      and islands_ships.ship_id = ?  ";
+        $stmt = $this->db->prepare($query);
+
+
+        return $stmt->execute([$amount, $island_id, $ship_id]);
+
+    }
+
+
+    public function checkShipAvailability($island_id,$ship_id, $amount):bool
+    {
+        $query = "SELECT count(*)  as res FROM islands_ships
+                    WHERE islands_ships.island_id = ?
+                    AND islands_ships.ship_id = ?
+                    AND islands_ships.amount >= ? ";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$island_id,$ship_id, $amount]);
+
+        $result = $stmt->fetch();
+
+        if($result['res'] < 1){
+            return false;
+        }
+        return true;
+    }
+
+
+    public function getShipInfo($ship_id):\Generator
+    {
+
+        $query = "SELECT id, name, health, demage FROM ships WHERE ships.id = ?";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$ship_id]);
+
+
+        while ($result = $stmt->fetchObject(Ship::class)) {
+            yield $result;
+        }
+
     }
 
 }

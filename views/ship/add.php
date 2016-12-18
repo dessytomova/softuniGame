@@ -10,7 +10,7 @@
     <div class="well bs-component">
         <form class="form-horizontal" method="post" action="<?=$this->url("ship", "addPost");?>">
             <fieldset>
-                <label><?=$model->getName()?>Resources Needed To Unlock Ship:</label>
+                <label><?=$model->getName()?> Resources Needed To Unlock Ship:</label>
                 <div class="list-group table-of-contents">
                     <ul class="nav nav-tabs">
                         <?php

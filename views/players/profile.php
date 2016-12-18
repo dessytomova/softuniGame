@@ -32,7 +32,11 @@
             <p class="list-group-item active">Ships</p>
                 <?php
                 foreach($model->getShips() as $s){?>
-                    <a href="<?=$this->url("ship", "add", [$s->getShipId(), $s->getName()]);?>"  class="list-group-item"><?= $s->getName().' Amount: '.$s->getAmount();?></a>
+                    <a href="<?=$this->url("ship", "add", [$s->getShipId(), $s->getName()]);?>"
+                       class="list-group-item">
+                        <?= $s->getName().' Amount: '.$s->getAmount()
+                        . " ( Health ". $s->getHealth()
+                        . "; Demage ". $s->getDemage()." per ship )"?></a>
                <?php } ?>
         </div>
     </div>
@@ -42,6 +46,10 @@
             <p class="list-group-item active">Start Battle</p>
             <div class="well">
                 <a href = "<?=$this->url("island", "listIslands");?>"" >Choose enemy</a>
+            </div>
+            <p class="list-group-item active">View Report</p>
+            <div class="well">
+                <a href = "<?=$this->url("battle", "viewReport");?>"" >View Reports</a>
             </div>
         </div>
     </div>

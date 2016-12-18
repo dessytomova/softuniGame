@@ -20,4 +20,5 @@ interface BuildingServicesInterface
     public function updateBuilding($island_id, $building_id, $level): bool;
     public function checkBuildingLevel($island_id,$building_id,$level):bool;
 
+
     }
