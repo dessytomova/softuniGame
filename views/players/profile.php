@@ -36,7 +36,7 @@
                        class="list-group-item">
                         <?= $s->getName().' Amount: '.$s->getAmount()
                         . " ( Health ". $s->getHealth()
-                        . "; Demage ". $s->getDemage()." per ship )"?></a>
+                        . "; Damage ". $s->getDemage()." per ship )"?></a>
                <?php } ?>
         </div>
     </div>

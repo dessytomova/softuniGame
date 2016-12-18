@@ -17,7 +17,7 @@
                             <li class="list-group-item">
                                 <h4><?= $ship->getName()
                                         . " ( Health: ".$ship->getHealth()
-                                        . "; Demage: ".$ship->getDemage()." ) "
+                                        . "; Damage: ".$ship->getDemage()." ) "
                                     . " Amount: ".$ship->getAmount();?></h4>
                                 <input type="number" class="form-control" id = "ship_<?=$ship->getShipId();?>" name = "ships[<?=$ship->getShipId()?>]" min="0" max = "<?=$ship->getAmount();?>" maxlength="5" value  = "0">
                             </li>
