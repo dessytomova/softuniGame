@@ -10,7 +10,7 @@
         <p class="list-group-item active">Islands</p>
         <?php foreach ($model->getNearestIslands() as $island){?>
             <a href="<?= $this->url("battle","start",[$model->getIslandId(), $island->getIslandId()]);?>" class="list-group-item" >
-                Name: <label  class="btn btn-default btn-xs"><?=$island->getName();?></label>
+                Name: <label  class="btn btn-default btn-xs"><?=htmlspecialchars($island->getName());?></label>
                 Coordinates: <label  class="btn btn-default btn-xs">( X: <?=$island->getX();?>
                 Y: <?=$island->getY();?> )</label>
                 Distance:<label  class="btn btn-default btn-xs"><?= $island->getDistance(); ?></label>
