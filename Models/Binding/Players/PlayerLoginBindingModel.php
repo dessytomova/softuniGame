@@ -7,6 +7,8 @@ class PlayerLoginBindingModel
 
     private $password; // password
 
+
+
     /**
      * @return mixed
      */

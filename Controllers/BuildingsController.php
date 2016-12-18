@@ -21,7 +21,7 @@ use SoftUni\Services\ResponseServiceInterface;
 class BuildingsController
 {
     const COEFFICIENT = 0.1;
-
+    const MAX_BUILDING_LEVEL = 15;
     private $session;
     private $authenticationService;
     private $responseService;
@@ -29,6 +29,7 @@ class BuildingsController
     private $buildingServices;
     private $islandService;
     private $resourceService;
+
 
     public function __construct(AuthenticationServiceInterface $authenticationService,
                                 SessionInterface $session,
@@ -61,6 +62,11 @@ class BuildingsController
         $name = $this->buildingServices->findBuildingName($building_id);
         $resourcesForIsland = $this->islandService->findIslandResources($island_id);
         $nextLevel = $level + 1;
+
+        if($nextLevel > self::MAX_BUILDING_LEVEL){
+            $this->session->set("error", self::MAX_BUILDING_LEVEL . " is MAX building level");
+            $this->responseService->redirect("players", "profile");
+        }
 
         $resourcesUpdated = [];
         foreach ($costPerBuilding as $cost){
