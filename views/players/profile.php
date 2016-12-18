@@ -7,13 +7,13 @@
 <?php if(mb_strlen($this->session->get('error'))>0){ ?>
     <div class="alert alert-dismissible alert-danger"><?= $this->session->message('error');?></div>
 <?php } ?>
-<h1>Welcome, <?= $model->getUsername(); ?></h1>
+<h1>Welcome, <?= htmlspecialchars($model->getUsername()); ?></h1>
 <div  class="col-lg-3 col-md-3 col-sm-4">
     <div>
         <div class="list-group table-of-contents">
             <p class="list-group-item active">Islands</p>
             <?php foreach($model->getIslands() as $island){?>
-              <a href="<?=$this->url("island", "changeIsland", [$island->getId()]);?>" class="list-group-item" <?php if($this->session->get('activeIsland')== $island->getId()){?>style = "color:yellow"<?php }?>><?= $island->getName()." (".$island->getX().",".$island->getY().")";?></a>
+              <a href="<?=$this->url("island", "changeIsland", [$island->getId()]);?>" class="list-group-item" <?php if($this->session->get('activeIsland')== $island->getId()){?>style = "color:yellow"<?php }?>><?= htmlspecialchars($island->getName())." (".$island->getX().",".$island->getY().")";?></a>
             <?php }?>
         </div>
     </div>

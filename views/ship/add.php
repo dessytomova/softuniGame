@@ -10,7 +10,7 @@
     <div class="well bs-component">
         <form class="form-horizontal" method="post" action="<?=$this->url("ship", "addPost");?>">
             <fieldset>
-                <label><?=$model->getName()?> Resources Needed To Unlock Ship:</label>
+                <label><?=$model->getName()?>Resources Needed To Unlock Ship:</label>
                 <div class="list-group table-of-contents">
                     <ul class="nav nav-tabs">
                         <?php
@@ -30,14 +30,14 @@
                 </div>
                 <div class="list-group table-of-contents">
                     <div class="form-group has-success">
-                        <label class="control-label" for="quality">Quantity</label>
-                        <input type="number" class="form-control" id="quality" name="quality"  min="1" max = "15" maxlength="5">
+                        <label class="control-label" for="quality">Quality</label>
+                        <input type="number" class="form-control" id="quality" name="quality"  min="1" maxlength="5">
                     </div>
                 </div>
-                <input type="hidden" name="ship_id" value="<?=$model->getId()?>">
+                <input type="hidden" name="ship_id" value="">
             </fieldset>
             <a href = "<?=$this->url("players", "profile")?>" class = ' btn btn-primary'>Cancel</a>
-            <input type="submit" value="Buy" class = ' btn btn-warning'/>
+            <input type="submit" name="submit" value="Buy" class = ' btn btn-warning'/>
         </form>
     </div>
 </div>
