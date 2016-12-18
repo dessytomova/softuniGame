@@ -77,6 +77,8 @@ class BattleController
 
         $attackedIslandId = $battleStartPostBindingModel->getAttackedId();
 
+
+
         if(!$this->islandService->checkId($attackedIslandId)){
             $this->session->set("error"," Island Not Existing");
             $this->responseService->redirect("players", "profile");
@@ -119,7 +121,6 @@ class BattleController
 
 
         $this->session->set("error","Battle Finished!");
-        //$this->responseService->redirect("players", "profile");
 
         $this->responseService->redirect("battle","viewReport");
 

@@ -27,8 +27,8 @@
       <file leaf-file-name="BattleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="121" column="10" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
+            <state relative-caret-position="125">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="e#124#162#0#PHP" expanded="true" />
               </folding>
@@ -36,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewReport.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewReport.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/battle/viewReport.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -51,7 +51,7 @@
       <file leaf-file-name="ShipServices.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
+            <state relative-caret-position="50">
               <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
                 <element signature="e#120#158#0#PHP" expanded="true" />
@@ -83,15 +83,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BattleServices.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BattleServices.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/BattleServices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state relative-caret-position="16">
+              <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
               <folding>
                 <element signature="e#120#158#0#PHP" expanded="true" />
-                <marker date="1482037656275" expanded="true" signature="2211:2360" ph="INSERT INTO battle_result... " />
-                <marker date="1482037656275" expanded="true" signature="3713:3949" ph="SELECT attac... battle_result" />
+                <marker date="1482040205610" expanded="true" signature="2708:2857" ph="INSERT INTO battle_result... " />
+                <marker date="1482040205610" expanded="true" signature="4210:4446" ph="SELECT attac... battle_result" />
               </folding>
             </state>
           </provider>
@@ -168,9 +168,9 @@
         <option value="$PROJECT_DIR$/views/players/profile.php" />
         <option value="$PROJECT_DIR$/Services/ShipServicesInterface.php" />
         <option value="$PROJECT_DIR$/Services/ShipServices.php" />
-        <option value="$PROJECT_DIR$/Services/BattleServices.php" />
-        <option value="$PROJECT_DIR$/Controllers/BattleController.php" />
         <option value="$PROJECT_DIR$/views/battle/viewReport.php" />
+        <option value="$PROJECT_DIR$/Controllers/BattleController.php" />
+        <option value="$PROJECT_DIR$/Services/BattleServices.php" />
       </list>
     </option>
   </component>
@@ -182,7 +182,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
+    <option name="x" value="-15" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -467,15 +467,15 @@
       <workItem from="1481282580557" duration="9389000" />
       <workItem from="1481373746875" duration="9330000" />
       <workItem from="1481537851020" duration="37774000" />
-      <workItem from="1481628100758" duration="215348000" />
+      <workItem from="1481628100758" duration="216706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306120000" />
+    <option name="totallyTimeSpent" value="307478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1936" height="1056" extended-state="0" />
+    <frame x="-15" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2372973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -973,9 +973,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/battle/viewReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="101" selection-start-line="15" selection-start-column="101" selection-end-line="15" selection-end-column="101" />
+          <folding>
+            <element signature="e#7#115#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#124#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
+        <state relative-caret-position="50">
           <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
             <element signature="e#120#158#0#PHP" expanded="true" />
@@ -998,32 +1018,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/BattleServices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state relative-caret-position="16">
+          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
           <folding>
             <element signature="e#120#158#0#PHP" expanded="true" />
-            <marker date="1482037656275" expanded="true" signature="2211:2360" ph="INSERT INTO battle_result... " />
-            <marker date="1482037656275" expanded="true" signature="3713:3949" ph="SELECT attac... battle_result" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="121" column="10" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
-          <folding>
-            <element signature="e#124#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/battle/viewReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="101" selection-start-line="15" selection-start-column="101" selection-end-line="15" selection-end-column="101" />
-          <folding>
-            <element signature="e#7#115#0#PHP" expanded="true" />
+            <marker date="1482040205610" expanded="true" signature="2708:2857" ph="INSERT INTO battle_result... " />
+            <marker date="1482040205610" expanded="true" signature="4210:4446" ph="SELECT attac... battle_result" />
           </folding>
         </state>
       </provider>

@@ -10,6 +10,7 @@ namespace SoftUni\Services;
 
 
 use SoftUni\Adapter\DatabaseInterface;
+use SoftUni\Core\MVC\SessionInterface;
 use SoftUni\Models\DB\BattleReport;
 
 class BattleServices implements BattleSevicesInterface
@@ -19,16 +20,22 @@ class BattleServices implements BattleSevicesInterface
     private $shipServices;
     private $islandService;
     private $resourceService;
+    private $responseService;
+    private $session;
 
     public function __construct(DatabaseInterface $db,
                                 ShipServicesInterface $shipServices,
                                 IslandServiceInterface $islandService,
-                                ResourceServiceInterface $resourceService)
+                                ResourceServiceInterface $resourceService,
+                                SessionInterface $session,
+                                ResponseServiceInterface $responseService)
     {
         $this->db = $db;
         $this->shipServices = $shipServices;
         $this->islandService = $islandService;
         $this->resourceService = $resourceService;
+        $this->responseService = $responseService;
+        $this->session = $session;
     }
 
     public function compareFleets($attackedIslandId,$islandId,$battleStartPostBindingModel){
@@ -54,6 +61,11 @@ class BattleServices implements BattleSevicesInterface
             $attackedFleetDemage = $attackedFleetDemage + $attackedShip->getAmount()*$attackedShip->getDemage();
         }
 
+        if($attackerFleetDemage ==0){
+            $this->session->set("error","Select at least one ship!");
+            $this->responseService->redirect("players","profile");
+
+        }
         if($attackerFleetDemage >= $attackedFleetHealth){
 
             return "Win";
