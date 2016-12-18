@@ -24,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Core/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-25">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BattleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
               <folding>
                 <element signature="e#124#162#0#PHP" expanded="true" />
               </folding>
@@ -36,58 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewReport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/battle/viewReport.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="101" selection-start-line="15" selection-start-column="101" selection-end-line="15" selection-end-column="101" />
-              <folding>
-                <element signature="e#7#115#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShipServices.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding>
-                <element signature="e#120#158#0#PHP" expanded="true" />
-                <marker date="1482037625538" expanded="true" signature="567:621" ph="SELECT id, n... ships" />
-                <marker date="1482037625538" expanded="true" signature="867:901" ph="SELECT count... ships" />
-                <marker date="1482037625538" expanded="true" signature="867:914" ph="SELECT count... ships" />
-                <marker date="1482037625538" expanded="true" signature="867:915" ph="SELECT id, n... ships" />
-                <marker date="1482037625538" expanded="true" signature="1133:1198" ph="INSERT INTO islands_ships... " />
-                <marker date="1482037625538" expanded="true" signature="1395:1586" ph="SELECT ship_... islands_ships" />
-                <marker date="1482037625538" expanded="true" signature="1875:2261" ph="SELECT ship_... ship_buildings" />
-                <marker date="1482037625538" expanded="true" signature="2542:2730" ph="SELECT * FRO... ships_cost_resources" />
-                <marker date="1482037625538" expanded="true" signature="2542:2731" ph="SELECT ship_... ships_cost_resources" />
-                <marker date="1482037625538" expanded="true" signature="3045:3214" ph="UPDATE islan... " />
-                <marker date="1482037625538" expanded="true" signature="3475:3635" ph="UPDATE islan... " />
-                <marker date="1482037625538" expanded="true" signature="3860:4056" ph="SELECT count... islands_ships" />
-                <marker date="1482037625538" expanded="true" signature="4371:4432" ph="SELECT id, n... ships" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShipServicesInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Services/ShipServicesInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BattleServices.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/BattleServices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1644">
-              <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+            <state relative-caret-position="231">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
               <folding>
                 <element signature="e#120#158#0#PHP" expanded="true" />
                 <marker date="1482040205610" expanded="true" signature="2708:2857" ph="INSERT INTO battle_result... " />
@@ -97,35 +60,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/battle/start.php">
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="652">
+              <caret line="173" column="0" selection-start-line="163" selection-start-column="9" selection-end-line="173" selection-end-column="0" />
               <folding>
-                <element signature="e#6#112#0#PHP" expanded="true" />
+                <element signature="e#1114#1302#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/players/profile.php">
+      <file leaf-file-name="ViewInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/ViewInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-              <folding>
-                <element signature="e#6#114#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BattleReport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/DB/BattleReport.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,7 +100,6 @@
         <option value="$PROJECT_DIR$/Adapter/Database.php" />
         <option value="$PROJECT_DIR$/Adapter/DatabaseInterface.php" />
         <option value="$PROJECT_DIR$/Services/PlayerService.php" />
-        <option value="$PROJECT_DIR$/Core/View.php" />
         <option value="$PROJECT_DIR$/Models/DB/BuildingRequirenments.php" />
         <option value="$PROJECT_DIR$/Models/DB/BuildingRequirements.php" />
         <option value="$PROJECT_DIR$/Models/DB/ShipCost.php" />
@@ -191,10 +141,11 @@
         <option value="$PROJECT_DIR$/Services/ShipServicesInterface.php" />
         <option value="$PROJECT_DIR$/Services/ShipServices.php" />
         <option value="$PROJECT_DIR$/views/battle/viewReport.php" />
-        <option value="$PROJECT_DIR$/Controllers/BattleController.php" />
         <option value="$PROJECT_DIR$/Services/BattleServices.php" />
         <option value="$PROJECT_DIR$/views/battle/start.php" />
         <option value="$PROJECT_DIR$/views/players/profile.php" />
+        <option value="$PROJECT_DIR$/Core/View.php" />
+        <option value="$PROJECT_DIR$/Controllers/BattleController.php" />
       </list>
     </option>
   </component>
@@ -281,111 +232,21 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="players" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="island" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buildings" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="battle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,12 +352,12 @@
       <workItem from="1481282580557" duration="9389000" />
       <workItem from="1481373746875" duration="9330000" />
       <workItem from="1481537851020" duration="37774000" />
-      <workItem from="1481628100758" duration="217579000" />
+      <workItem from="1481628100758" duration="220097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308351000" />
+    <option name="totallyTimeSpent" value="310869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1936" height="1056" extended-state="0" />
@@ -539,22 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Services/ResponseServiceInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron/updateResources.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -658,17 +503,6 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="169" column="68" selection-start-line="169" selection-start-column="68" selection-end-line="169" selection-end-column="68" />
-          <folding>
-            <element signature="e#31#72#0#PHP" expanded="false" />
-            <element signature="e#1114#1302#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="e#124#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Services/ShipServices.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1020,18 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/BattleServices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1644">
-          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
-          <folding>
-            <element signature="e#120#158#0#PHP" expanded="true" />
-            <marker date="1482040205610" expanded="true" signature="2708:2857" ph="INSERT INTO battle_result... " />
-            <marker date="1482040205610" expanded="true" signature="4210:4446" ph="SELECT attac... battle_result" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/battle/start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1049,6 +861,54 @@
           <folding>
             <element signature="e#6#114#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/ViewInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="173" column="0" selection-start-line="163" selection-start-column="9" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="e#1114#1302#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/BattleServices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="e#120#158#0#PHP" expanded="true" />
+            <marker date="1482040205610" expanded="true" signature="2708:2857" ph="INSERT INTO battle_result... " />
+            <marker date="1482040205610" expanded="true" signature="4210:4446" ph="SELECT attac... battle_result" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/BattleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
+          <folding>
+            <element signature="e#124#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

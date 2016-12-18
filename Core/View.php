@@ -48,16 +48,6 @@ class View implements ViewInterface
             $templateName = $controller . DIRECTORY_SEPARATOR . $action;
         }
 
-        /*foreach ($model as $m){
-            if(is_scalar($m)){
-                $m = $this->escapeParam($m);
-            }
-            else{
-                foreach($m as $p){
-                    $p = $this->escapeParam($p);
-                }
-            }
-        }*/
 
         include self::VIEWS_FOLDER
             . DIRECTORY_SEPARATOR

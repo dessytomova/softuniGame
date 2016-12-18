@@ -107,7 +107,7 @@ class BattleController
 
         $updateBattleRes = $this->battleSevices->updateBattleAward($islandId, $attackedIslandId, $resultFromBattle);
 
-        if(!$updateBattleRes){
+        if($updateBattleRes===false){
             $this->session->set("error","Resourses not updated");
             $this->responseService->redirect("players", "profile");
         }
